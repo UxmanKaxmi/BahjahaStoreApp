@@ -1,0 +1,182 @@
+{
+
+  "New Account":"New Account",
+  "Reset Password":"Reset Password",
+  "TuturialScreen1Text": "TuturialScreen1Text ",
+  "TuturialScreen2Text": "TuturialScreen1Tex",
+  "loginHeading": "Login",
+  "Terms and Conditions":"Terms and Conditions",
+  "*Email Required": "Email Required*",
+  "*Invalid Email": "*Invalid Email",
+  "placeholderUsername": "Email",
+  "placeholderPassword": "Password",
+  "*Password Required": "*Password Required*",
+  "resetPassword": "Forgot Password?",
+  "registration": "New Account",
+  "login": "Login",
+  "Already have an account?":"Already have an account?",
+  "Various Stores":"Various Stores",
+  "Variety of specialty stores":"Variety of specialty stores",
+  "and Attractive Cards":"and Attractive Cards",
+  "Competitive prices":"Competitive prices",
+  "with Bahjah cards, benefit from":"with Bahjah cards, benefit from",
+  "the competitive prices":"the competitive prices",
+  "Instant delivery":"Instant delivery",
+  "buy for yourself or send to":"buy for yourself or send to",
+  "whom you love":"whom you love",
+  "*All fields are required":"*All fields are required'",
+
+
+
+  "REGISTRATION Page":"",
+
+  "*Passwords don't match":"*Passwords don't match",
+  "Create":"Create",
+  "Username":"Username",
+  "Email":"Email",
+  "Password":"Password",
+  "Confirm Password":"Confirm Password",
+  "*must be atleast 4 characters":"*must be atleast 4 characters",
+  "All Fields Required*":"All Fields Required*",
+
+  "*first name is required":"*first name is required",
+  "Wrong Password":"Wrong Password",
+  "add serial number":"add serial number",
+  "scan serial number":"scan serial number",
+  "add card":"add card",
+  "15 digit code":"15 digit code",
+
+  "REGISTRATION TWO Page":"",
+  "Thank you for Registering with. Please check your email to Activate your account.":"Thank you for Registering with. Please check your email to Activate your account.",
+  "*Email is required":"Email is required",
+  "*Password is required":"Create",
+
+  "Enter your Email":"Enter your Email",
+
+
+  "skip":"skip",
+  "popoverText1":"choose card",
+  "popoverText2":"Select the recipient",
+  "popoverText3":"Leave the rest to us",
+
+
+
+  "Card 1":"Drinks",
+  "Card 2":"Clothes",
+  "Card 3":"Entertainment",
+  "Card 4":"Kids",
+  "Card 5":"Save 15%",
+  "Card 6":"Save 25%",
+  "Card 7":"Save 50%",
+  "Card 8":"Misc",
+
+
+  "gridText1":"fashion",
+  "gridText2":"electronics",
+  "gridText3":"kids",
+  "gridText4":"health and fitness",
+  "gridText5":"home and garden",
+  "gridText6":"travel",
+  "gridText7":"jewelries",
+  "gridText8":"all",
+
+
+  "filterText1":"Best Seller",
+  "filterText2":"Best Price",
+  "filterText3":"Most Preferred",
+  "filterText4":"New",
+
+
+  "Circle 1":"electronics",
+  "Circle 2":"fashion",
+  "Circle 3":"accessories",
+  "Circle 4":"health and fitness",
+  "Circle 5":"kids",
+  "Circle 6":"drinks",
+  "Circle 7":"all",
+  "Circle 8":"food",
+  "Circle 9":"recreation",
+  "Categories":"Categories",
+
+
+  "Fields Required":"Fields Required",
+  "Last Name":"Last Name",
+  "First Name":"First Name",
+  "Wallet":"Wallet",
+
+  "About Card":"About Card",
+  "Terms":"Terms",
+  "Location":"Location",
+  "Next":"Next",
+  "*last name is required":"*last name is required",
+  "family name":"family name",
+  "last name":"last name",
+  "first name":"first name",
+  "Successfully Logged in!":" Successfully Logged in!",
+  "already Registered":"Already Registered?",
+  "اﻟﺪﻓﻊ":"اﻟﺪﻓﻊ",
+  "The Card has been added to your Wallet":"The Card has been added to your Wallet",
+  "CardName":"Costa Card",
+  "Price":"500 SAR",
+  "ThankYou":"Thank You",
+  "Phone Number":"Phone Number",
+  "Gift Cards":"Gift Cards",
+  "Total Price":"Total Price",
+
+"Pay":"Pay",
+"Card Name":"Gift Card",
+"Card Price":"500 SARS",
+"Scan the QR code for":"Scan the QR code for",
+
+"used cards":"used cards",
+"favourites":"favourites",
+"promotional cards":"promotional cards",
+"help":"help",
+"language":"language",
+"logout":"logout",
+"اﻟﻌﺮﺑﻴﺔ":"اﻟﻌﺮﺑﻴﺔ",
+"edit":"edit",
+"accounts":"accounts",
+"*Required":"*Required",
+"Name":"Name",
+"Mobile":"Mobile",
+"send to friend":"send to friend",
+"personal":"personal",
+
+"edit":"edit",
+"Card":"Card",
+"Gift Card":"Gift Card",
+
+"Address":"Address",
+  "country":"country",
+  "city":"city",
+  "state":"state",
+  "postal code":"postal code",
+
+
+
+
+"Your Wallet is Empty":"Your Wallet is Empty",
+"You can now start with our cards...":"You can now start with our cards...",
+
+"email or SMS by clicking the sent link":"email or SMS by clicking the sent link",
+"You can activate cards recieved by":"You can activate cards recieved by",
+"The content you are looking for is currently not available.":"The content you are looking for is currently not available.",
+
+"Description":"Description",
+"Confirm Payment":"Confirm Payment",
+"Payment":"Payment",
+"favorites":"favorites",
+"Add":"Add",
+"Search":"Search",
+"Price":"Price",
+"Buy":"Buy",
+"next":"next",
+
+
+"WishList is empty...":"WishList is empty...",
+"Thank you! for adding to wishlist":"Thank you! for adding to wishlist",
+"Location is not available":"Location is not available",
+
+"Loading data...":"Loading data..."
+}

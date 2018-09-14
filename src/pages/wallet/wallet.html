@@ -1,0 +1,118 @@
+<!--
+  Generated template for the SendtofriendPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>{{ 'Wallet' | translate }}</ion-title>
+    </ion-navbar>
+
+  </ion-header>
+
+
+  <ion-content padding>
+    <ion-row *ngIf="addressIsEmpty then dataEmpty else dataArray">
+
+    </ion-row>
+
+    <ng-template #dataEmpty>
+
+      <ion-row class="topRow" >
+
+        <ion-img class="walletEmptyImg" align="center">
+
+          </ion-img>
+
+
+
+
+    </ion-row>
+    <ion-row class="botRow" >
+
+      <ion-row class="botRow">
+       <ion-label class="titleText">{{ 'Your Wallet is Empty' | translate }}</ion-label>
+       </ion-row>
+
+       <ion-row class="botRow">
+          <ion-label class="simpleText">{{ 'You can now start with our cards...' | translate }}</ion-label>
+        </ion-row>
+
+        <ion-row class="rowBottom"		>
+
+            <ion-buttons >
+
+                <button align="center" class="buttonlogin" tappable (click)="addWallet()">
+                  {{ 'Add' | translate }}    </button>
+              </ion-buttons>
+
+        </ion-row>
+
+
+
+    </ion-row>
+    </ng-template>
+
+
+    <ng-template #dataArray>
+
+      <ion-grid>
+
+          <ion-row  *ngFor="let item of WalletCore" class="payment-info-row">
+
+            <ion-row tappable (click)="generateQRCode($event,item)"  class="row-card">
+
+              <ion-col col-4 >
+                <img src="{{item.aUrlPicture}}" >
+              </ion-col>
+
+              <ion-col col-8>
+                <ion-row>
+                  <ion-label   class="cardtop">
+                    {{item.aProductName}}
+                  </ion-label>
+                </ion-row>
+
+                <ion-row>
+
+                    <ion-label class="cardbot">
+                        {{item.aRecipientName}}
+                      </ion-label>
+
+                  <img class="location-logo">
+                  <!-- <ion-label class="cardbot">
+
+                  </ion-label> -->
+                </ion-row>
+
+
+                <ion-row>
+                  <ion-label ng-model="test" class="payment-price-label">
+                    {{item.aAmount}} SAR </ion-label>
+                </ion-row>
+
+              </ion-col>
+
+
+
+
+            </ion-row>
+
+
+
+
+          </ion-row>
+
+        </ion-grid>
+  </ng-template>
+
+
+
+
+
+
+
+
+  </ion-content>

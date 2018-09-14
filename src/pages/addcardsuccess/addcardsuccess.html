@@ -1,0 +1,93 @@
+<!-- <ion-header>
+
+  <ion-navbar class="headerbackground">
+    <ion-row class="rowheader">
+
+      <img class="headerImage" *ngIf="aDefaultPictureModel" src="{{aDefaultPictureModel.aImageUrl}}"  align="center">
+
+
+
+    </ion-row>
+  </ion-navbar>
+
+
+</ion-header> -->
+<ion-header class="imgHeader custom-header-class">
+
+  <ion-navbar>
+    <img class="headerImage" *ngIf="dataFromAddCardSerialPage" src="{{dataFromAddCardSerialPage.aGetGiftCardByCoupon.aProduct.aProducts.aUrlPicture}}"
+      align="center">
+
+      <ion-row style="width: 100%" >
+          <ion-label class="label-header">
+              {{dataFromAddCardSerialPage.aGetGiftCardByCoupon.aProduct.aProducts.aName}}
+          </ion-label>
+      </ion-row>
+      <ion-row >
+          <ion-label class="label-header">
+              {{dataFromAddCardSerialPage.aGetGiftCardByCoupon.aAmount}}
+          </ion-label>
+      </ion-row>
+  </ion-navbar>
+
+
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+
+    <ion-row >
+        <ion-label *ngIf="dataFromAddCardSerialPage" class="label-title">
+          Welcome {{dataFromAddCardSerialPage.aGetGiftCardByCoupon.aRecipientName}}!
+       </ion-label>
+    </ion-row>
+
+
+    <ion-row >
+        <ion-label class="label-class">
+            Your card is ready
+        </ion-label>
+    </ion-row>
+
+
+    <ion-row *ngIf="IsGiftCardUsed then IfGiftCardIsUsed else IfGiftCardNotUsed">
+
+      </ion-row>
+
+      <ng-template #IfGiftCardNotUsed>
+       <ion-row   class="botRow"  tappable (click)=redeem() ><button ion-button round outline>Redeem</button></ion-row>
+       </ng-template>
+
+
+       <ng-template #IfGiftCardIsUsed>
+          <ion-label class="label-class">
+              Your card is already used!
+          </ion-label>
+         </ng-template>
+
+
+
+
+  </ion-grid>
+
+
+
+
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <ion-row class="botRow" tappable ><button ion-button round outline>Redeem</button></ion-row>
+
+</ion-content> -->

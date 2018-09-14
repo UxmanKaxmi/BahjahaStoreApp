@@ -1,0 +1,64 @@
+<!-- <ion-header no-shadow>
+  <ion-navbar>
+    <ion-buttons end *ngIf="showSkip">
+      <button ion-button (click)="startApp()" color="primary"></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content no-bounce>
+  <ion-slides pager="true" (ionSlideReachStart)="slideChangedto1()"  (ionSlideNextStart)="slideChangedto2()"  >
+
+    <ion-slide  class="splash1 "  >
+      
+      <h2 class="slide-title" style="margin-top: 35rem;font-weight: 800; -webkit-text-fill-color: #662aec;font-size: xx-large">{{ 'Various Stores' | translate }}</h2>
+      <ion-label style=" font-weight:800;margin-top: 0.5rem;font-size: large">{{ 'Variety of specialty stores' | translate }}</ion-label>
+      <ion-label style=" font-weight:800;margin-top: 0.1rem;font-size: large">{{ 'and Attractive Cards' | translate }}</ion-label>
+      
+    </ion-slide>
+
+
+ 
+
+
+
+
+    <ion-slide (ionSlideDidChange)="slideChangedto2()"  class="splash2"  >
+        <h2 class="slide-title" style="margin-top: 35rem;font-weight: 800; -webkit-text-fill-color: #efec2e;font-size: xx-large">{{ 'Competitive prices' | translate }}</h2>
+        <ion-label style="font-weight:600;margin-top: 0.5rem; color: white;font-size: large">{{ 'with Bahjah cards, benefit from' | translate }}</ion-label>
+        <ion-label style=" font-weight:600;margin-top: 0.1rem; color: white ;font-size: large"> {{ 'the competitive prices' | translate }} </ion-label>
+  
+      </ion-slide>
+
+
+
+      <ion-slide class="splash3" >
+      
+          <h2 class="slide-title" style="margin-top: 35rem;font-weight: 800; -webkit-text-fill-color: #f85763;font-size: xx-large">{{ 'Instant delivery' | translate }}</h2>
+          <ion-label style="font-weight:600;margin-top: 0.5rem; color: #efec2e ;font-size: large"> {{ 'buy for yourself or send to' | translate }} </ion-label>
+          <ion-label style=" font-weight:600;margin-top: 0.1rem; color: #efec2e; font-size: large">{{ 'whom you love' | translate }}</ion-label>
+
+        
+        </ion-slide>
+ 
+  </ion-slides>
+  <ion-footer>
+      <ion-navbar>
+        <ion-buttons tappable (click)="openLoginScreen()"  end>
+          <button   class="backbutton" STYLE="
+      background: transparent;
+      font-size: larger;
+    font-weight: 900;
+          color: #662aec;
+          height: 15px;
+          width: 100%;
+          margin-right: 2%;
+      
+      "> {{ 'skip' | translate }}</button>
+    </ion-buttons>
+    </ion-navbar>
+    </ion-footer>
+</ion-content>
+
+
+      
