@@ -3,6 +3,7 @@ import { LoadingController } from 'ionic-angular';
 import { GeneralService } from './../../providers/general-service/GeneralService';
 import { Component } from '@angular/core';
 import {  NavController, NavParams } from 'ionic-angular';
+import { Printer, PrintOptions } from '@ionic-native/printer';
 
 /**
  * Generated class for the CardaddedPage page.
@@ -25,12 +26,15 @@ export class CardaddedPage {
   couponCode:any;
 
 
-  constructor(public loadingCtrl:LoadingController,public navCtrl: NavController, public navParams: NavParams,public generalService:GeneralService) {
+  constructor(public printer: Printer,public loadingCtrl:LoadingController,public navCtrl: NavController, public navParams: NavParams,public generalService:GeneralService) {
     // CardaddedPage.username="kadeel@apptech.com.tr";
+    debugger;
+
     // CardaddedPage.password="store";
     this.dataFromAddCardSerialPage = this.navParams.get('dataFromAddCardSerialPage');
-    this.couponCode= this.dataFromAddCardSerialPage.aGetGiftCardByCoupon.aGiftCardCouponCode;
-    debugger;
+    this.dataFromAddCardSerialPage = this.dataFromAddCardSerialPage.aGetGiftCardByCoupon;
+
+    this.couponCode= this.dataFromAddCardSerialPage.aGetGiftCardByCoupon;
     this.ApplyGiftCard(AddcardPage.username,AddcardPage.password,this.couponCode);
 
 
@@ -95,5 +99,37 @@ loader.present();
    console.log('ionViewDidLoad AddcardsuccessPage');
 
  }
+ removezero(item) {
+  let itemToConvert =  item.aAmount.toString();
+  let newValue = itemToConvert.split('.')[0];
+  return newValue;
+  }
+  printPage(){
+
+    this.printer.isAvailable().then();
+
+let options: PrintOptions = {
+     name: 'MyDocument',
+     printerId: 'printer007',
+     duplex: true,
+     landscape: true,
+     grayscale: true
+   };
+
+   this.printer.print("https://bahjahcards.com/",options).then();
+
+
+
+// this.printer.isAvailable().then(function(){
+//           this.printer.print("https://www.techiediaries.com").then(function(){
+//           alert("printing done successfully !");
+//           },function(){
+//           alert("Error while printing !");
+//           });
+//         }, function(){
+//         alert('Error : printing is unavailable on your device ');
+//         });
+
+          }
 
 }

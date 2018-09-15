@@ -274,7 +274,7 @@ height: 40px;
   }
   .grid {
     height: 100%;
-    position: absolute;
+    position: relative;
     top: 10%;
     left: 0;
     bottom: 0;
@@ -422,7 +422,7 @@ margin-top: 5%;
   font-weight: 700;
 }
 img {
-  max-width: 40%;
+  max-width: 100%;
   background-size: auto;
 }
 

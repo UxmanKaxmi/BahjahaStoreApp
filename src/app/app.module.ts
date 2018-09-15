@@ -1,3 +1,4 @@
+import { PrintPage } from './../pages/print/print';
 import { LoginPage } from './../pages/login/login';
 import { WalletselectedcardPage } from './../pages/walletselectedcard/walletselectedcard';
 import { AddcardserialPage } from './../pages/addcardserial/addcardserial';
@@ -34,6 +35,7 @@ import { AddcardsuccessPage } from '../pages/addcardsuccess/addcardsuccess';
 import { NgxQRCodeModule } from 'ngx-qrcode2';
 import { QrmodalPage } from '../pages/qrmodal/qrmodal';
 import {ThemeableBrowser} from '@ionic-native/themeable-browser'
+import { Printer, PrintOptions } from '@ionic-native/printer';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -45,7 +47,7 @@ export function createTranslateLoader(http: HttpClient) {
 @NgModule({
 
   declarations: [
-    QrmodalPage,AddcardsuccessPage,WalletselectedcardPage,MyApp,CardaddedPage,AddcardPage,AddcardserialPage,WalletPage,SendtowalletPage,TutorialPage,RegistrationPage,SendtofriendPage,SendtowalletPage,
+    PrintPage,QrmodalPage,AddcardsuccessPage,WalletselectedcardPage,MyApp,CardaddedPage,AddcardPage,AddcardserialPage,WalletPage,SendtowalletPage,TutorialPage,RegistrationPage,SendtofriendPage,SendtowalletPage,
     RegistrationtwoPage,SelectedcardPage,LoginPage
   ],
   imports: [
@@ -62,12 +64,12 @@ export function createTranslateLoader(http: HttpClient) {
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    QrmodalPage,AddcardsuccessPage,WalletselectedcardPage,CardaddedPage,AddcardPage,AddcardserialPage,MyApp,SendtowalletPage,TutorialPage,RegistrationPage,SendtofriendPage,SendtowalletPage,
+    PrintPage,QrmodalPage,AddcardsuccessPage,WalletselectedcardPage,CardaddedPage,AddcardPage,AddcardserialPage,MyApp,SendtowalletPage,TutorialPage,RegistrationPage,SendtofriendPage,SendtowalletPage,
     RegistrationtwoPage,SelectedcardPage,LoginPage
   ],
   providers: [
 
-    InAppBrowser,SocialSharing,NetworkInterface,ThemeableBrowser,NativePageTransitions,
+    InAppBrowser,SocialSharing,NetworkInterface,ThemeableBrowser,NativePageTransitions,Printer,
     StatusBar,QRScanner,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},

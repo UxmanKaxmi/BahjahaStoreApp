@@ -54,6 +54,11 @@ export class AddcardsuccessPage {
     });
   }
 
+  removeZero(item) {
+    let itemToConvert =  item.aAmount.toString();
+    let newValue = itemToConvert.split('.')[0];
+    return newValue;
+    }
 
 
 }
