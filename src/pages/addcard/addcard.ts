@@ -1,3 +1,4 @@
+import { Printer, PrintOptions } from '@ionic-native/printer';
 import { Storage } from '@ionic/storage';
 import { GeneralService } from './../../providers/general-service/GeneralService';
 import { ToastController, Platform } from "ionic-angular";
@@ -41,7 +42,8 @@ export class AddcardPage {
     public navParams: NavParams,
     private qrScanner: QRScanner,
     public toastCtrl: ToastController,
-    public storage:Storage
+    public storage:Storage,
+    public printer:Printer
   ) {
     this.storage.get("usr").then((usr) => {
       AddcardPage.username= usr;
@@ -199,6 +201,9 @@ private customHandleBackButton(): void {
     });
 
   }
+
+
+
 
 
 

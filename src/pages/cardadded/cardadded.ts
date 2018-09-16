@@ -111,12 +111,17 @@ loader.present();
 let options: PrintOptions = {
      name: 'MyDocument',
      printerId: 'printer007',
-     duplex: true,
-     landscape: true,
+     duplex: false,
+     landscape: false,
      grayscale: true
+    //  bounds:[4000,500]
    };
 
-   this.printer.print("https://bahjahcards.com/",options).then();
+   this.printer.print('<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body style=" "><div id="invoice-POS" style=" padding: 32px; "> <center id="top"> <div class="logo"></div> <div class="info"> <h2 style=" font-size: 50px; ">Bahjah</h2> </div><!--End Info--> </center><!--End InvoiceTop--> <div class="info"> <h2 style="font-size: 38px;text-align: center;">Receipt</h2> <br><br><br></div> <div id="bot" style=" /* align-self: center; */ /* justify-content: center; */ "> <div id="table" style=" text-align: -webkit-center; "> <table style=" width: 100%; "> <tbody><tr class="tabletitle"> <td class="item" style=" "><h2 style="font-size: 40px;">Card Name</h2></td> <td class="Hours"><h2 style=" font-size: 40px; ">Qty</h2></td> <td class="Rate"><h2 style=" font-size: 40px; ">Price</h2></td> </tr> <tr class="service"> <td class="tableitem"><p class="itemtext" style=" font-size: 35px; /* font-size: 40px; */ ">'+this.dataFromAddCardSerialPage.aProduct
+.aProducts.aName+'</p></td> <td class="tableitem"><p class="itemtext" style=" font-size: 35px; /* font-size: 40px; */ ">1</p></td> <td class="tableitem"><p class="itemtext" style=" font-size: 35px; ">'+this.dataFromAddCardSerialPage.aAmount+'</p></td> </tr> <br></tbody><br></table> <br><br></div> <br><br><br> <!--End Table--> <div id="bot" style=" text-align: -webkit-center; "> <div id="table"> <table style=" width: 100%; "> <tbody><tr class="tabletitle"> <td class="item"><h2 style=" font-size: 40px; ">Recipient Email</h2></td> <td class="Rate"><h2 style=" font-size: 40px; ">Sender Email</h2></td> </tr> <tr class="service"> <td class="tableitem"><p class="itemtext" style=" font-size: 35px; ">'+this.dataFromAddCardSerialPage.aRecipientName
++'</p></td> <td class="tableitem"><p class="itemtext" style=" font-size: 35px; ">'+this.dataFromAddCardSerialPage.aSenderEmail
++'</p></td> </tr> </tbody></table> <br></div><!--End Table--> <div id="legalcopy" style=" font-size: 63px; "> <p class="legal"><strong>Thank you for your business!</strong> </p> </div> <br></div><!--End InvoiceBot--> </div><!--End Invoice--></div></body></html>',options).then();
+   debugger;
 
 
 

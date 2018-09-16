@@ -1,3 +1,4 @@
+import { PrintOptions, Printer } from '@ionic-native/printer';
 import { CardaddedPage } from './../cardadded/cardadded';
 import { GeneralService } from './../../providers/general-service/GeneralService';
 import { Component } from '@angular/core';
@@ -20,9 +21,8 @@ export class AddcardsuccessPage {
   // Is: boolean = false;
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public generalService:GeneralService) {
+  constructor(public printer:Printer,public navCtrl: NavController, public navParams: NavParams,public generalService:GeneralService) {
      this.dataFromAddCardSerialPage = this.navParams.get('dataFromAddCardSerialPage');
-
 
      debugger;
 
@@ -59,6 +59,9 @@ export class AddcardsuccessPage {
     let newValue = itemToConvert.split('.')[0];
     return newValue;
     }
+
+
+
 
 
 }
